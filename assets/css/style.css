@@ -60,6 +60,7 @@ body {
 }
 .centered {text-align: center}
 .mt {margin-top: 50px;}
+.mts {margin-top: 20px;}
 .mb {margin-bottom: 50px;}
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
@@ -101,12 +102,12 @@ a {
 	-o-transition: background-color .4s linear, color .4s linear;
 	-ms-transition: background-color .4s linear, color .4s linear;
 	transition: background-color .4s linear, color .4s linear;
-	color: #1abc9c;
+	color: white;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color:#696E74;
+  color:#00e600;
 }
 
 .nopadding {
@@ -242,10 +243,10 @@ input {
 
 /* GREY SECTION */
 #g {
-	padding-top: 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background: #22A7F0;
 	color: white;
-	height: 100%;
 }
 
 .portfolio {
