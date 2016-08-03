@@ -57,6 +57,11 @@ p {
 	font-size: 14px;
 }
 
+.skill {
+	font-size: 16px;
+	text-align: center;
+}
+
 html,
 body {
 	height: 100%;
@@ -134,6 +139,16 @@ hr {
 .projDivide {
 	width: 50%;
 	margin-left: 25%;
+}
+
+.skillDivide {
+	width: 50%;
+	margin-left: 25%;
+	border-color: black;
+}
+
+li {
+	position: relative;
 }
 
 /* FORM CONFIGURATION */
