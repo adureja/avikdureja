@@ -45,6 +45,18 @@ p {
 	margin-top: 10px; 
 }
 
+.about {
+	text-align: justify;
+}
+
+.project {
+	width: 80%;
+	text-align: justify;
+	margin-left: 10%;
+	color: white;
+	font-size: 14px;
+}
+
 html,
 body {
 	height: 100%;
@@ -102,12 +114,12 @@ a {
 	-o-transition: background-color .4s linear, color .4s linear;
 	-ms-transition: background-color .4s linear, color .4s linear;
 	transition: background-color .4s linear, color .4s linear;
-	color: white;
+	color: #FFCB0B;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color:#FFCB0B;
+  color: white;
 }
 
 .nopadding {
@@ -115,6 +127,14 @@ a:focus {
 	margin: 0px;
 }
 
+hr {
+
+}
+
+.projDivide {
+	width: 50%;
+	margin-left: 25%;
+}
 
 /* FORM CONFIGURATION */
 

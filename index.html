@@ -50,11 +50,12 @@
         <div class="row">
             <h1 class="centered">About Me</h1>
             <div class="col-md-8 col-md-offset-2">
-                <p>I'm a <b>sophomore</b> studying <b>Computer Science</b> at
-                Georgia Tech.<br>
-                I've been coding and creating for <b>5 years</b>,
-                and I'm ecstatic to start learning how code bases work at the industry level.</p><br>
-                <p>My goal is to obtain a <b>software engineering
+                <p class="about">I'm a <b>sophomore</b> studying <b>Computer Science</b> at
+                Georgia Tech.</p>
+                <br>
+                <p class="about">I've been coding and creating for <b>5 years</b>, and I'm ecstatic to start learning how code bases work at the industry level.</p>
+                <br>
+                <p class="about">My goal is to obtain a <b>software engineering
                 internship</b> for the Summer of 2017 at a <b>medium-sized
                 startup</b> that fosters intellectual growth, both as a person and a developer.</p>
             </div><!--/col-md-6-->
@@ -65,9 +66,10 @@
             <div class="row centered">
                 <h1>Experience</h1>
                 <div class="col-md-8 col-md-offset-2">
-                    <p style="color:white;font-size:18px">This is a
+                    <p style="color:white;font-size:20px">This is a
                     collection of applications, classes, and programs I have
-                    completed that have aided in my growth as a developer.</p>
+                    completed that have aided in my growth as a developer. Click
+                    on the yellow titles to learn more!</p>
                 </div><!--/col-md-8-->
             </div><!--/row-->   
         </div><!--/.container-->
@@ -78,69 +80,81 @@
             <div class="col-sm-4"><!--/Experience-->
                 <h2>Work Experience</h2>
                 <div id="header">
-                    <hr style="width:50%;margin-left:25%"></hr>
+                    <hr class="projDivide"></hr>
                 </div>
-                <h3>
-                    <a href="http://www.greaterbergen.org/">Greater Bergen<br>Community Action</a>
-                </h3>
-               <h4>Technology Intern</h4>
-                <p style="color:white;font-size:14px">Helped reorganize and renovate front-end for company website; configured hardware and provided IT assistance at remote locations.</p>    
+                <div class="media">
+                    <h3>
+                        <a href="http://www.greaterbergen.org/"><b>Greater Bergen<br>Community Action</b></a>
+                    </h3>
+                    <h4>Technology Intern - Summer '14-'15</h4>
+                    <p class="project">Helped reorganize and renovate front-end for company website; configured hardware and provided IT assistance at remote locations.</p> 
+                </div>                    
             </div>
+
             <div class="col-sm-4"><!--/Projects-->
                 <h2>Projects</h2>
                 <div id="header">
-                    <hr style="width:50%;margin-left:25%"></hr>
+                    <hr class="projDivide"></hr>
                 </div>
-                <h3><!--/Soundmate-->
-                    <a href="https://angel.co/projects/335317-soundmate">Soundmate</a>
-                </h3>
-               <h4>Creator</h4>
-                <p style="color:white;font-size:14px">Used jQuery &amp; Soundcloud API to create a radio-like Chrome extension; it queues song recommendations based on music preferences; explore new music while browsing the web!
-                </p>
-                <h3><!--/Travel-->
-                    <a target="_tab" href="https://angel.co/projects/335321-gt-travel-agency">GT Travel Agency</a>
-                </h3>
-               <h4>Frontend Developer</h4>
-                <p style="color:white;font-size:14px">Used jQuery &amp; Soundcloud API to create a radio-like Chrome extension; it queues song recommendations based on music preferences; explore new music while browsing the web!
-                </p>                   
+                <div class="media">
+                    <h3><a href="https://angel.co/projects/335317-soundmate"><b>Soundmate</b></a></h3>
+                    <h4>Creator - Summer '16</h4>
+                    <p class="project">Used jQuery &amp; Soundcloud API to create a radio-like Chrome extension; it queues song recommendations based on music preferences; explore new music while browsing the web!</p>
+                </div>    
+                <div class="media">
+                    <h3>
+                        <a target="_tab" href="https://angel.co/projects/335321-gt-travel-agency"><b>GT Travel Agency</b></a>
+                    </h3>
+                   <h4>Frontend Developer - Summer '16</h4>
+                    <p class="project">Implemented sign-in functionality, template rendering, query processing skeletons, and population of forms to create a fully functioning travel review website. Created for an Introduction to Databases course.</p>
+                </div>    
             </div>
+
             <div class="col-sm-4"><!--/Courses-->
                 <h2>Courses</h2>
                 <div id="header">
-                    <hr style="width:50%;margin-left:25%"></hr>
+                    <hr class="projDivide"></hr>
                 </div>
-                <h3>
-                    <a href="http://www.greaterbergen.org/">Greater Bergen Community Action</a>
-                </h3>
-               <h4>Role: Technology Intern</h4>
-                <p style="color:white;font-size:14px">Helped reorganize and renovate front-end for company website; configured hardware and provided IT assistance at remote locations.</p>                  
+                <div class="media">
+                    <h3><a href="http://www.cc.gatech.edu/~simpkins/teaching/gatech/cs4400/syllabus.html"><b>CS 4400: Database Systems</b></a></h3>
+                    <h4>Summer '16</h4>
+                    <p class="project">Examined fundamental concepts of database design and created a project from the conceptual relational models of the application to the implementation of the Flask web application connected to an external MySQL database.</p>
+                </div>                  
+                <div class="media">
+                    <h3><a href="https://home.cc.gatech.edu/ccl/15"><b>CS 1332: Data Structures and Algorithms</b></a></h3>
+                    <h4>Spring '16</h4>
+                    <p class="project">Learned, understood, and coded a variety of common algorithms data structures, including sorting algorithms, search trees, text processing, and graph algorithms.</p>
+                </div>                 
+                <div class="media">
+                    <h3><a href="http://cs1331.gatech.edu/syllabus.html"><b>CS 1331: Object-Oriented Programming</b></a></h3>
+                    <h4>Fall '15</h4>
+                    <p class="project">Introduced to fundamentals of OOP design by generating creative solutions to computational problems in Java.</p>
+                </div>                     
             </div>
         </div>   
     </div>
 
 
-    <div id="g">
-        <div class="container">
-            <div class="row clients centered">
-              <h2>Repertoire</h2>
-              <div class="col-sm-2 col-sm-offset-1">
+    <div class="container">
+        <div class="row clients centered">
+            <h2>Repertoire</h2>
+            <div class="col-sm-2 col-sm-offset-1">
                 <img src="assets/img/client1.png" alt="">
-              </div>
-              <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
                 <img src="assets/img/client3.png" alt="">
-              </div>
-              <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
                 <img src="assets/img/client2.png" alt="">
-              </div>
-              <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
                 <img src="assets/img/client4.png" alt="">
-              </div>
-              <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
                 <img src="assets/img/client5.png" alt="">
-              </div>
-            </div><!--/row-->
-        </div><!--/container-->
-    </div><!--/.G-->
+            </div>
+        </div><!--/row-->
+    </div><!--/container-->
 
     <div id="sep">
         <div class="container">
