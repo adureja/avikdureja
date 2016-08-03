@@ -79,8 +79,8 @@ body {
 }
 
 .media {
-	width: 90%;
-	margin-left: 5%;
+	width: 80%;
+	margin-left: 10%;
 }
 
 .centered {text-align: center}
@@ -249,7 +249,7 @@ input {
 	padding-top: 5px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height:800px;
+	min-height:850px;
 	height:100%;
 	
     -webkit-background-size: 100%;
@@ -344,7 +344,7 @@ input {
 
 /* CONTACT SEPARATOR */
 #sep {
-	background: url(../img/sep.jpg) no-repeat center top;
+	background: url(../img/sep.png) no-repeat center top;
 	padding-top: 5%;
 	background-attachment: relative;
 	background-position: center center;
