@@ -55,6 +55,8 @@ p {
 	text-align: justify;
 	color: white;
 	font-size: 14px;
+	width: 90%;
+    margin-left: 5%;
 }
 
 .skill {
