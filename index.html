@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>Hey, I'm <b>Avik Dureja</b>.</h1>
-                    <h1>I'm a 2nd year CS student @ <b><a href="http://www.cc.gatech.edu/">Georgia Tech</a></b>.</h1>
+                    <h1>I'm a 2nd year CS student @ <b><a target="_tab" href="http://www.cc.gatech.edu/">Georgia Tech</a></b>.</h1>
                     <h1>I love building apps, solving problems, and learning
                     new things.</h1>
                 </div>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="media">
                     <h3>
-                        <a href="http://www.greaterbergen.org/"><b>Greater Bergen<br>Community Action</b></a>
+                        <a target="_tab" href="http://www.greaterbergen.org/"><b>Greater Bergen<br>Community Action</b></a>
                     </h3>
                     <h4>Technology Intern - Summer '14-'15</h4>
                     <p class="project">Helped reorganize and renovate front-end for company website; configured hardware and provided IT assistance at remote locations.</p> 
@@ -97,7 +97,7 @@
                     <hr class="projDivide"></hr>
                 </div>
                 <div class="media">
-                    <h3><a href="https://angel.co/projects/335317-soundmate"><b>Soundmate</b></a></h3>
+                    <h3><a target="_tab" href="https://angel.co/projects/335317-soundmate"><b>Soundmate</b></a></h3>
                     <h4>Creator - Summer '16</h4>
                     <p class="project">Used jQuery &amp; Soundcloud API to create a radio-like Chrome extension; it queues song recommendations based on music preferences; explore new music while browsing the web!</p>
                 </div>    
@@ -116,17 +116,17 @@
                     <hr class="projDivide"></hr>
                 </div>
                 <div class="media">
-                    <h3><a href="http://www.cc.gatech.edu/~simpkins/teaching/gatech/cs4400/syllabus.html"><b>CS 4400: Database Systems</b></a></h3>
+                    <h3><a target="_tab" href="http://www.cc.gatech.edu/~simpkins/teaching/gatech/cs4400/syllabus.html"><b>CS 4400: Database Systems</b></a></h3>
                     <h4>Summer '16</h4>
                     <p class="project">Examined fundamental concepts of database design and created a project from the conceptual relational models of the application to the implementation of the Flask web application connected to an external MySQL database.</p>
                 </div>                  
                 <div class="media">
-                    <h3><a href="https://home.cc.gatech.edu/ccl/15"><b>CS 1332: Data Structures and Algorithms</b></a></h3>
+                    <h3><a target="_tab" href="https://home.cc.gatech.edu/ccl/15"><b>CS 1332: Data Structures and Algorithms</b></a></h3>
                     <h4>Spring '16</h4>
                     <p class="project">Learned, dissected, and coded implementations of a variety of common algorithms &amp; data structures, including sorting algorithms, search trees, text processing, and graph algorithms.</p>
                 </div>                 
                 <div class="media">
-                    <h3><a href="http://cs1331.gatech.edu/syllabus.html"><b>CS 1331: Object-Oriented Programming</b></a></h3>
+                    <h3><a target="_tab" href="http://cs1331.gatech.edu/syllabus.html"><b>CS 1331: Object-Oriented Programming</b></a></h3>
                     <h4>Fall '15</h4>
                     <p class="project">Introduced to fundamentals of OOP design by generating creative solutions to computational problems in Java.</p>
                 </div>                     
@@ -202,9 +202,9 @@
         <div class="container">
             <div class="row centered">
                 <div class="col-sm-8 col-sm-offset-2">
-                    <a href="https://www.linkedin.com/in/avik-dureja-5b7b5aa0
+                    <a target="_tab" href="https://www.linkedin.com/in/avik-dureja-5b7b5aa0
     "><i class="ion-social-linkedin"></i></a>
-                    <a href="#"><i class="ion-social-github"></i></a>
+                    <a target="_tab" href="https://github.com/imthehinduhavoc"><i class="ion-social-github"></i></a>
                     <a href="#"><i class="ion-document-text"></i></a>
                 </div>    
             </div>
@@ -231,88 +231,6 @@
     <script src="assets/js/jquery.isotope.min.js">
     </script> 
     <script src="assets/js/custom.js">
-    </script> 
-    <script>
-    // Portfolio
-    (function($) {
-    "use strict";
-    var $container = $('.portfolio'),
-    $items = $container.find('.portfolio-item'),
-    portfolioLayout = 'fitRows';
-
-    if( $container.hasClass('portfolio-centered') ) {
-      portfolioLayout = 'masonry';
-    }
-
-    $container.isotope({
-      filter: '*',
-      animationEngine: 'best-available',
-      layoutMode: portfolioLayout,
-      animationOptions: {
-          duration: 750,
-          easing: 'linear',
-          queue: false
-      },
-      masonry: {
-      }
-    }, refreshWaypoints());
-
-    function refreshWaypoints() {
-      setTimeout(function() {
-      }, 1000);   
-    }
-
-    $('nav.portfolio-filter ul a').on('click', function() {
-    var selector = $(this).attr('data-filter');
-    $container.isotope({ filter: selector }, refreshWaypoints());
-    $('nav.portfolio-filter ul a').removeClass('active');
-    $(this).addClass('active');
-    return false;
-    });
-
-    function getColumnNumber() { 
-      var winWidth = $(window).width(), 
-      columnNumber = 1;
-
-      if (winWidth > 1200) {
-        columnNumber = 5;
-    } else if (winWidth > 950) {
-        columnNumber = 4;
-    } else if (winWidth > 600) {
-        columnNumber = 3;
-    } else if (winWidth > 400) {
-        columnNumber = 2;
-    } else if (winWidth > 250) {
-        columnNumber = 1;
-    }
-    return columnNumber;
-    }       
-
-    function setColumns() {
-        var winWidth = $(window).width(), 
-        columnNumber = getColumnNumber(), 
-        itemWidth = Math.floor(winWidth / columnNumber);
-
-        $container.find('.portfolio-item').each(function() { 
-          $(this).css( { 
-              width : itemWidth + 'px' 
-          });
-        });
-    }
-
-    function setPortfolio() { 
-        setColumns();
-        $container.isotope('reLayout');
-    }
-
-    $container.imagesLoaded(function () { 
-        setPortfolio();
-    });
-
-    $(window).on('resize', function () { 
-        setPortfolio();          
-        });
-    })(jQuery);
     </script>
 </body>
 </html>

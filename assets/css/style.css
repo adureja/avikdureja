@@ -5,6 +5,8 @@
  * Theme Name: Basic
  * URL: http://blacktie.co
  * Version: 1.0
+ *
+ * Modified by: Avik Dureja
  */
 
 /*	################################################################
@@ -50,9 +52,7 @@ p {
 }
 
 .project {
-	width: 80%;
 	text-align: justify;
-	margin-left: 10%;
 	color: white;
 	font-size: 14px;
 }
@@ -75,6 +75,12 @@ body {
 	display: block;
 	clear: both;
 }
+
+.media {
+	width: 90%;
+	margin-left: 5%;
+}
+
 .centered {text-align: center}
 .mt {margin-top: 50px;}
 .mts {margin-top: 20px;}
